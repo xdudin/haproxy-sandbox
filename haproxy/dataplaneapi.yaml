@@ -16,3 +16,5 @@ haproxy:
     reload_cmd: kill -SIGUSR2 1
     restart_cmd: kill -SIGUSR2 1
     reload_delay: 5
+
+# http://localhost:8070/v2/docs
