@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.Duration;
-
 @RestController
 @Slf4j
 public class SandboxController {
@@ -37,7 +35,7 @@ public class SandboxController {
     @SneakyThrows
     @GetMapping("/heavy")
     public String heavyRequest() {
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         return "OK";
     }
 }
