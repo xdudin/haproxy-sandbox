@@ -44,7 +44,7 @@
 					"response": []
 				},
 				{
-					"name": "maint",
+					"name": "setState",
 					"request": {
 						"auth": {
 							"type": "basic",
@@ -98,7 +98,7 @@
 					"response": []
 				},
 				{
-					"name": "get settings",
+					"name": "getState",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
