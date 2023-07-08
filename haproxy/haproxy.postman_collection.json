@@ -176,6 +176,44 @@
 			"response": []
 		},
 		{
+			"name": "health_one",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health_two",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "getLoad_proxy",
 			"request": {
 				"method": "GET",
@@ -260,7 +298,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "10",
+					"raw": "1000",
 					"options": {
 						"raw": {
 							"language": "text"

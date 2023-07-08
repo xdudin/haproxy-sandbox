@@ -38,4 +38,16 @@ public class SandboxController {
         Thread.sleep(10000);
         return "OK";
     }
+
+    @GetMapping("/health")
+    public String health() {
+        if (load < 100) {
+            log.info("health OK");
+            return "OK";
+        }
+        else {
+            log.info("health NOT_OK");
+            return "OVERLOADED";
+        }
+    }
 }
