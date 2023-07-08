@@ -37,7 +37,7 @@ public class SandboxController {
     @SneakyThrows
     @GetMapping("/heavy")
     public String heavyRequest() {
-        Thread.sleep(Duration.ofSeconds(5L));
+        Thread.sleep(5000);
         return "OK";
     }
 }
