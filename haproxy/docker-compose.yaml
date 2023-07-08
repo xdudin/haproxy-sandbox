@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  proxy:
+    network_mode: host
+#    sysctls:
+#      - net.ipv4.ip_unprivileged_port_start=0
+    build:
+      context: .
+      dockerfile: Dockerfile
